@@ -1,0 +1,35 @@
+Create repo using web interface. Then clone.
+When create repo, grant um_engineers admin
+  (Settings, Collaborators and teams, Manage access)
+
+git clone git@github.com:UltraMessaging/mon_demo.git
+git clone git@github.com:fordsfords/mkbin.git
+
+git add .
+git status
+git commit -m "comment"
+git push
+
+# New branch
+git checkout -b mybranch
+git push -u origin newbranch
+
+# Merge
+git fetch
+git merge otherbranch
+
+# Switch to existing branch
+git checkout mybranch
+
+# Diff
+git diff [file]
+git diff --staged [file]
+
+# Cancel changes (pre-stage):
+git checkout -- file
+
+# Cancel changes (staged):
+git reset HEAD file
+
+# Update gh-pages (assuming it exists)
+git fetch; git checkout gh-pages; git merge main; git push; git checkout main
