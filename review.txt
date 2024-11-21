@@ -1,0 +1,31 @@
+Please review the attached code. The following review goals should be sequentially applied.
+
+1. Review for coding errors. E.g. code that is syntactically correct, but may not accomplish what the coder had in mind.
+
+2. Review for design flaws. E.g. code that may perform the intended operations, but which violate common best practices.
+
+3. Review for vulnerabilities. For example, potential buffer overruns.
+
+4. Review for minimal complexity. For example, identify areas where the code could be made more simple and straight-forward, even at the potential cost of lower performance.
+
+5. Review for over-engineering.
+
+6. Review for clarity and readability by reasonably experienced C programmers. This might include identifying "clever" but non-idiomatic coding techniques. It might also include non-obvious abbreviations.
+
+7. Review for obscurity. This includes identifing rarely-used APIs that might be unfamiliar, especially if the API is "tricky" (e.g. strtok()).
+
+8. Review for spelling. This includes comments and identifiers, including those with multiple words. But don't flag obvious abbreviations E.g. "my_speling_err" should flag "speling" but not "err".
+
+9. Review for consistency of naming conventions. For example, if I have "input_device" and "output_dev", the "device" vs. "dev" is inconsistent (assuming they are the same kind of thing).
+
+10. Review for proper memory management, including possible leaks.
+
+11. Review for error handling. For example, are errors being ignored?
+
+12. Review for portability.
+
+13. Review for internal documentation. Assume that the overall architecture and design are documented externally, but identify areas of non-obvious coding that should have additional comments.
+
+14. Review for anything I didn't list but you think should be part of a good review.
+
+15. Review for performance. Note that while I generally prioritize simplicity, readability, and maintainability over performance, this is not a blanket rule; the cost/benefit of each potential performance improvement should be weighed.
